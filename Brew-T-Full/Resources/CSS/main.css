@@ -1,0 +1,685 @@
+/* **** Testing connection
+body{
+    background-color: aqua;
+}
+***** */
+
+/* Custom Fonts */
+@font-face {
+    font-family: 'wildflowers';
+    src: url('../../Vendors/Fonts/of_wildflowers_and_wings-webfont.eot');
+    src: url('../../Vendors/Fonts/of_wildflowers_and_wings-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/of_wildflowers_and_wings-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/of_wildflowers_and_wings-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nella';
+    src: url('../../Vendors/Fonts/nellasuedemo-webfont.eot');
+    src: url('../../Vendors/Fonts/nellasuedemo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/nellasuedemo-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/nellasuedemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'northen';
+    src: url('../../Vendors/Fonts/northen-webfont.eot');
+    src: url('../../Vendors/Fonts/northen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/northen-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/northen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'forgetmenot';
+    src: url('../../Vendors/Fonts/forgetmenot-webfont.eot');
+    src: url('../../Vendors/Fonts/forgetmenot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/forgetmenot-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/forgetmenot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Universal styling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ace5ee;
+    margin: 0;
+    padding: 0;
+    position: relative;        
+}
+
+h1{
+    margin: 0;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* navigation styling */
+
+.navBar{
+    background-color: #f5f5f5;
+    background-position:center 0;
+    background-size:cover;
+    background-attachment: fixed;
+    position: fixed;
+    width:100%;
+    height: 50px;
+    z-index: 10;
+    
+}
+
+.menu{
+    display: none;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.menu a{
+background-color: #f5f5f5;
+    color: #000000;
+    font-size:0.75em;
+    font-weight: 800;
+    font-family: 'nella';
+    
+}
+
+nav{
+
+    text-align: center;
+}
+
+#ddMenu {
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-bars{
+    color: #ace5ee;
+    font-size: 2em;
+    margin-left: 89vw;
+    margin-top: 1.75vh;
+}
+
+/* ***** Homepage Styling ***** */
+
+#home{
+ width:100%;
+    height: 100vh;
+    background-color: #ace5ee; 
+    background-size: cover;
+    }
+#Logo {
+    width: 40px;
+    z-index: 70;
+    position: fixed;
+    padding-top: 0.8vh;
+    padding-left: 0.8vw;
+} 
+#heading, #biline{
+
+    text-align: center;
+    font-family: 'wildflowers'; 
+    z-index: 10;
+}
+
+#heading{
+    padding-top: 30vh;
+    font-size: 1.75em;
+}
+
+#biline{
+    margin-bottom: 53vh;
+    font-size: 1.25em;
+}
+
+#menuBorder {
+    /*position: absolute;*/
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 11vw;
+}
+
+/* ***** Section Styling ***** */
+
+.secHead, .secInfo{
+    font-family: 'northen';
+    text-align: center
+}
+
+.secHead{
+   font-size: 1.25em; 
+}
+
+.secInfo{
+    font-size: .9em;
+}
+
+#about, #posts, #gallery {
+padding-top: 10.5vh;
+
+}
+
+.page{
+    background-color: #f5f5f5;
+    border: 1px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 5vw;
+    font-weight: 750;
+}
+
+/* ***** About Styling ***** */
+
+#about{
+    text-align: center; 
+    padding-bottom: 5vh;
+}
+
+#about .page{
+    margin-top: 5vh;
+    font-family: 'nella'
+}
+
+
+/* ***** Posts Styling ***** */
+#posts .secHead{
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+#posts .secInfo{
+    text-align: center;
+    margin-bottom: 4vh;
+}
+.post{
+    margin-bottom: 5vh;
+    width:90%;
+    margin-left:5vw;
+    font-family: 'nella';
+
+}
+
+.post p {
+    font-size: .75em;
+    font-weight: 750;
+}
+
+.postTitle, .postDate{
+    margin-bottom: 1.5vh;
+}
+
+#allPosts{
+text-align: center;
+font-family: 'northen';
+font-size: .75em;
+}
+
+.read, #allPosts a{
+    color:#54626f;
+}
+
+/* ***** Gallery Styling ***** */
+
+
+.Gal{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    height: auto;
+    
+}
+
+article{
+    text-align: center;
+    height: auto;
+    width:auto;
+}
+figure{
+    margin:1.5vh,1.5vw;
+}
+figcaption{
+    font-family: 'nella';
+    font-size: 0.8em;
+    font-weight: 1000;
+    margin: 0 auto;
+    padding: 0 3px;
+    
+}
+
+
+/* ***** All Posts styling ***** */
+
+.allPosts .secHead{
+    padding-top: 20vh;
+    padding-bottom:10vh;
+}
+
+
+.allPosts .post
+
+{
+    background-color: #f5f5f5;
+    border: 1px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 5vw;
+    font-weight: 750;
+}
+
+
+/* ***** Full posts Styling ***** */
+
+.blogPostFull .postHead{
+    
+    padding-top: 10vh;
+}
+
+.blogPostFull .postHead, .date, .menuHead {
+    
+    font-family: 'wildflowers';
+    text-align: center;
+}
+
+
+.foodMenu{
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: 'nella';
+    border: 1px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    font-size: .75em;
+    margin-left: 5vw;
+    font-weight: 900;
+
+}
+
+.wholePost{
+    text-align: justify;
+    width: 90%;
+    margin-left: 5vw;
+    font-family: 'forgetmenot';
+    background-color: #f5f5f5;
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size:.75em;
+    font-weight: 650;
+        
+}
+
+
+.control-label, .commentSec, .return, button
+
+{
+    font-family: 'northen';
+}
+
+.return
+{
+    text-align: center;
+}
+
+.return a
+{
+    color: black
+}
+
+
+/* ***** Comment Confirm Styling ***** */
+
+.commentConfirm{
+    padding-top: 10.5vh;
+    justify-content: center;
+}
+
+
+.breadcrumbDiv{
+    padding-left: 10vw;
+}
+
+.breadcrumb{
+
+    width: 90%;
+    justify-content: center;
+    font-family: 'wildflowers';
+    background-color: #f5f5f5;
+    
+    
+    
+}
+
+.breadcrumb .breadcrumb-item a{
+    color: black;
+}
+
+
+.confirmMessage{
+    width: 90%;
+    margin-left: 5vw;
+    font-family: 'nella';
+    background-color: #f5f5f5;
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size:.75em;
+    font-weight: 650;
+}
+
+
+.showComments{
+
+    width: 90%;
+    margin-left: 5vw;
+    font-family: 'nella';
+    background-color: #f5f5f5;
+    border: 1px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size:.95em;
+
+}
+
+.showComments h3{
+    text-decoration: underline;
+    font-size: 1.5em;
+
+}
+
+.showComments th{
+
+    width: 90px;
+}
+
+
+/*  ***** media queries ***** */
+@media only screen and (min-width: 360px)
+{
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 15vw;
+    }
+        
+}
+
+
+
+@media only screen and (min-width: 375px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 16.5vw;
+    }
+        
+}
+
+
+
+
+@media only screen and (min-width: 414px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 20.5vw;
+    }
+        
+}
+
+@media only screen and (min-width: 460px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 22.5vw;
+    }
+        
+}
+
+@media only screen and (min-width: 500px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 24.5vw;
+    }
+        
+}
+
+
+@media only screen and (min-width: 540px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 26vw;
+    }
+        
+}
+
+@media only screen and (min-width: 580px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 28vw;
+    }
+        
+}
+
+@media only screen and (min-width: 620px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 30vw;
+    }
+        
+}
+
+@media only screen and (min-width: 680px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 24vh;
+    padding-left: 32vw;
+    }
+        
+}
+
+@media only screen and (min-width: 768px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 26vh;
+    padding-left: 33vw;
+    }
+        
+}
+
+
+@media only screen and (min-width: 850px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 26vh;
+    padding-left: 35vw;
+    }
+        
+}
+
+@media only screen and (min-width: 940px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 26vh;
+    padding-left: 36.5vw;
+    }
+        
+}
+
+@media only screen and (min-width: 1024px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 27vh;
+    padding-left: 37.5vw;
+    }
+    
+    .fa-bars{
+ display: none;
+}
+    
+.menu{
+    display: inline;
+    background-image: none;
+}
+
+.menu li {
+    display: inline;
+    padding:0 3px;
+    margin: 0 2px;
+    color: #C1B3C0;
+}
+
+.menu a {
+    padding: 7.5px;
+    text-align: center;
+    display: inline;
+    font-size: 1.05em;
+    
+
+}
+
+nav{
+
+text-align: right; 
+padding-top: 15px;
+margin-top: 15px;
+    
+    
+}
+ 
+.navBar{
+    height: 80px;  
+    }
+    
+    #logo{
+        height: 74px;
+        width:74px;
+    } 
+    
+    
+.blogPostFull .postHead{
+    
+    padding-top: 15vh;
+}
+   
+    
+ .blogPostFull .postHead, .date, .menuHead
+{
+
+    font-size: 1.5em;
+}
+
+    
+    
+ .foodMenu, .wholePost
+    {
+        font-size: 1em;
+    }
+    
+    
+     
+    
+}
+
+
+@media only screen and (min-width: 1034px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 25vh;
+    padding-left: 39.5vw;
+    }
+        
+}
+
+@media only screen and (min-width: 1440px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 25vh;
+    padding-left: 40.5vw;
+    }
+        
+}
+
+
+
+@media only screen and (min-width: 2560px){
+    
+    #menuBorder {
+    position: absolute;
+    z-index: 5;
+    padding-top: 25vh;
+    padding-left: 45vw;
+    }
+        
+}
