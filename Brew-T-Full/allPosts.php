@@ -193,8 +193,12 @@ include 'Connection/db_connection.php';
 
          </div>
 
+         </br>
+         </br>
+         </br>
+
         <footer>
-        &copy;
+        &copy; Brew-T-Full 2019
         </footer>
         
         <!-- ***** Javascript links ***** -->

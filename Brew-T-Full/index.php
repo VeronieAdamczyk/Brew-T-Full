@@ -217,10 +217,14 @@
             </article>
             </div>    
         </section>
+
+        </br>
+        </br>
+        </br>
         <!-- ******** End of Posts Section ******** -->
         
         <footer>
-        &copy;
+        &copy; Brew-T-Full 2019
         </footer>
         
          <!-- ***** Javascript links ***** -->

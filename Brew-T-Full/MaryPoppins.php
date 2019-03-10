@@ -208,10 +208,12 @@ include 'Connection/db_connection.php';
             </br>
 
         </div>
-        
+        </br>
+        </br>
+        </br>
         <!-- *****Footer ***** -->
         <footer>
-        &copy;
+        &copy; Brew-T-Full 2019
         </footer>
         <!-- ***** End of Footer ***** -->
         

@@ -99,7 +99,17 @@ if (isset($_POST['user_name'])=== TRUE)
 
         </div>
 
+        </br>
+        </br>
+        </br>
 
+        <footer>
+            &copy; Brew-T-Full 2019
+        </footer>
+
+        <!-- ***** Javascript links ***** -->
+
+        <script src="Resources/JS/main.js"></script>
 
         </body>
 
